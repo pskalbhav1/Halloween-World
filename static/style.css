@@ -1,0 +1,331 @@
+html {
+    background:black;
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
+
+/* Bonus */
+html:hover .spider {
+    top: -120%;
+}
+
+.spider {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 10%;
+
+    /* 4. Animatie */
+    animation: swing 2s infinite;
+    transform-origin: top;
+
+    /* Bonus */
+    transition: 1s ease-in-out;
+}
+
+.spider .spiderweb {
+    width: 2px;
+    height: 200px;
+    margin-left: 49px;
+    background: white;
+}
+
+.spider .body {
+    width: 100px;
+    height: 80px;
+    background: white;
+    position: relative;
+    border-radius: 50%;
+}
+
+.spider .body .eye {
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    bottom: 20px;
+    background: black;
+    border-radius: 50%;
+}
+
+.spider .body .eye.left {
+    left: 15px;
+}
+
+.spider .body .eye.right {
+    right: 15px;
+}
+
+.spider .body .eye:after {
+    background: white;
+    width: 7px;
+    height: 7px;
+    content: '';
+    display: block;
+    margin: 55%;
+    border-radius: 50%;
+
+    /* 3. Animatie */
+    animation: look 8s infinite;
+}
+
+.spider .legs .leg {
+    width: 80px;
+    height: 40px;
+    margin-top: -20px;
+    border: 5px solid transparent;
+    border-top-color: white;
+    border-radius: 40px 40px 0 0;
+}
+
+.spider .legs {
+    position: absolute;
+    bottom: -10%;
+    z-index: -1;
+}
+
+.spider .legs.left {
+    left: -70%;
+}
+.spider .legs.right {
+    right: -60%;
+}
+
+
+.legs.left .leg:nth-child(1){
+    transform: rotate(10deg);
+    margin-left: 10px;
+}
+.legs.right .leg:nth-child(1){
+    transform: rotate(-10deg);
+    margin-left: -10px;
+}
+
+
+.legs.left .leg:nth-child(2){
+    transform: rotate(-20deg);
+    margin-left: 20px;
+}
+.legs.right .leg:nth-child(2){
+    transform: rotate(20deg);
+    margin-left: -20px;
+}
+
+
+.legs.left .leg:nth-child(3){
+    transform: rotate(-50deg);
+    margin-left: 30px;
+}
+.legs.right .leg:nth-child(3){
+    transform: rotate(50deg);
+    margin-left: -30px;
+}
+
+/* 1. Animatie */
+@keyframes look {
+    0%, 40%, 100% {
+        transform: translateX(0); 
+    }
+
+    45%, 95% {
+        transform: translateX(-110%);
+    }
+}
+
+
+/* 3. Animatie */
+@keyframes swing {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Bonus */
+html:hover .spider1 {
+    top: -200%;
+}
+
+.spider1 {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 80%;
+
+    /* 4. Animatie */
+    animation: swing 10s infinite;
+    transform-origin: top;
+
+    /* Bonus */
+    transition: 5s ease-in-out;
+}
+
+.spider1 .spiderweb {
+    width: 2px;
+    height: 400px;
+    margin-left: 49px;
+    background: white;
+}
+
+.spider1 .body {
+    width: 100px;
+    height: 80px;
+    background: white;
+    position: relative;
+    border-radius: 50%;
+}
+
+.spider1 .body .eye {
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    bottom: 20px;
+    background: black;
+    border-radius: 50%;
+}
+
+.spider1 .body .eye.left {
+    left: 15px;
+}
+
+.spider1 .body .eye.right {
+    right: 15px;
+}
+
+.spider1 .body .eye:after {
+    background: white;
+    width: 7px;
+    height: 7px;
+    content: '';
+    display: block;
+    margin: 55%;
+    border-radius: 50%;
+
+    /* 3. Animatie */
+    animation: look 4s infinite;
+}
+
+.spider1 .legs .leg {
+    width: 80px;
+    height: 40px;
+    margin-top: -20px;
+    border: 5px solid transparent;
+    border-top-color: white;
+    border-radius: 40px 40px 0 0;
+}
+
+.spider1 .legs {
+    position: absolute;
+    bottom: -10%;
+    z-index: -1;
+}
+
+.spider1 .legs.left {
+    left: -70%;
+}
+.spider1 .legs.right {
+    right: -60%;
+}
+
+html:hover .spider1 {
+    top: -200%;
+}
+
+.spider2 {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 5%;
+
+    /* 4. Animatie */
+    animation: swing 5s infinite;
+    transform-origin: top;
+
+    /* Bonus */
+    transition: 3s ease-in-out;
+}
+
+.spider2 .spiderweb {
+    width: 2px;
+    height: 250px;
+    margin-left: 49px;
+    background: white;
+}
+
+.spider2 .body {
+    width: 100px;
+    height: 80px;
+    background: white;
+    position: relative;
+    border-radius: 50%;
+}
+
+.spider2 .body .eye {
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    bottom: 20px;
+    background: black;
+    border-radius: 50%;
+}
+
+.spider2 .body .eye.left {
+    left: 15px;
+}
+
+.spider2 .body .eye.right {
+    right: 15px;
+}
+
+.spider2 .body .eye:after {
+    background: white;
+    width: 7px;
+    height: 7px;
+    content: '';
+    display: block;
+    margin: 55%;
+    border-radius: 50%;
+
+    /* 3. Animatie */
+    animation: look 2s infinite;
+}
+
+.spider2 .legs .leg {
+    width: 80px;
+    height: 40px;
+    margin-top: -20px;
+    border: 5px solid transparent;
+    border-top-color: white;
+    border-radius: 40px 40px 0 0;
+}
+
+.spider2 .legs {
+    position: absolute;
+    bottom: -10%;
+    z-index: -1;
+}
+
+.spider2 .legs.left {
+    left: -70%;
+}
+.spider2 .legs.right {
+    right: -60%;
+}
+
